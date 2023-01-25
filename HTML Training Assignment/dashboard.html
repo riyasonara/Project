@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./CSS/Dashboard.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800;900&family=Questrial&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="company__hamburger">
+            <img src="./images/menu-bar.svg" onclick="handleInOut()">
+            <img src="./images/header-logo.svg" />
+        </div>
+        <div class="Search-div" >
+            <img src="./images/search-icon.svg" alt="" srcset="">
+            <input type="text" placeholder="Search..">
+        </div>
+        <div class="notification-profile">
+            <img src="./images/notification-icon.svg" alt="" srcset="">
+            <div class="profile">
+                <img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+                <p>John doe</p>
+                <img src="./images/downward-arrow.svg" class="down-arrow" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="dashboard-options">
+            <div class="dash-option dash-option-active">
+                <img src="./images/dashboard-active.svg" alt="" srcset="">
+                <p>Dashboard</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/inbox-default.svg" alt="" srcset="">
+                <p>Inbox</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/user-default.svg" alt="" srcset="">
+                <p>Users</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/maintenance-default.svg" alt="" srcset="">
+                <p>Maintenance</p>
+            </div>
+            <div class="dash-option">
+                <img src="./images/setting-default.svg" alt="" srcset="">
+                <p>Setting</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let sidebar = document.getElementById("sidebar");
+    function handleInOut() {
+        sidebar.classList.toggle("width-0")
+        sidebar.classList.toggle("sidebar-active")
+    }
+</script>
+
+</html>

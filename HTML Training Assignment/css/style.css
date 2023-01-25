@@ -1,0 +1,84 @@
+.bg{
+    background-color: #FAFAFA;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.img-container{
+    width: 40%;
+}
+.hero-img img{
+    border: 20px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    width: 90%;
+    margin-top: 72px;
+}
+
+.main{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container{
+    width: 45%;
+}
+
+.content-container img{
+    width: 3rem;
+}
+
+.company-name img{
+    display: flex;
+    align-items: center;
+    width: 272px;
+    height: 58px;
+}
+
+.para{
+    font: normal normal 300 40px/47px Roboto;
+}
+
+.form{
+    color: #ADADAD;
+    font: normal normal normal 15px/20px Roboto;
+    text-align: left;
+}
+.user-name{
+    padding: 15px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    width: 345px;
+    height: 15px;
+}
+
+.pswd{
+    padding: 15px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    width: 345px;
+    height: 15px;
+}
+.login{
+    background: #C8242F;
+    border: #C8242F;
+    border-radius: 23px;
+    font: normal normal medium 18px/24px Roboto;
+    color: #FFFFFF;
+    width: 138px;
+    height: 45px;
+    margin-top: 0px;
+
+}
+.login-content{
+    font: normal normal normal 25px/33px Roboto;
+}
+.forpswd{
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+}
