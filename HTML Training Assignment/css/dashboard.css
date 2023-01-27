@@ -14,9 +14,10 @@ body {
     left: 0;
     top: 0;
     transition: 600ms;
-    z-index: -1;
+    z-index: 10;
     /* box-shadow: 0px 0px 10px gray; */
     background-color: white;
+    overflow: hidden;
   }
   .width-0 {
     width: 0;
@@ -64,6 +65,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20;
   }
   .dashboard-options {
     margin-top: 8rem;
@@ -81,7 +83,7 @@ body {
   {
       cursor: pointer;
       background-color: #c8242f3b;
-    color: #c8242f;
+      color: #c8242f;
   }
   .dash-option-active {
     background-color: #c8242f3b;
@@ -91,3 +93,210 @@ body {
     width: 1.3rem;
     margin-right: 0.6rem;
   }
+  .main-container{
+    margin: 1rem 3rem;
+  }
+  .dashb{
+    /* margin-top: 50px; */
+    /* margin-left: 290px; */
+    width: 146px;
+    height: 39px;
+    font-family: normal normal medium 30px/39px Roboto;
+    font-size: 30px;
+  }
+  .options{
+    display: flex;
+    margin-top: 1rem;
+    /* margin-left: 292px; */
+    padding: 20px;
+    flex-direction: row;
+    /* width: 95%; */
+    justify-content: space-between;
+  }
+  .options p{
+    color: #3E3E3E;
+  }
+  .box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    /* position: relative; */
+    top: 0.5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    justify-content: space-between;
+  }
+  .box p
+  {
+    margin: 0;
+  }
+  
+
+  .box img{
+    width: 3rem;
+  }
+  
+  .sale-header{
+    color: #3E3E3E;
+    font: normal normal medium 22px/29px Roboto;
+    font-size: 22px;
+  }
+  .graph-header{
+    display: flex;
+    flex-direction: row;
+    width: 802px;
+  }
+  .monthly-sales{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 44.5rem;
+    color: #ADADAD;
+    font: normal normal normal 12px/16px Roboto;
+    font-size: 12px;
+  }
+  
+  
+  #year{
+    text-decoration: underline;
+    color: #C8242F;
+    margin-bottom: 1rem;
+  }
+  
+  .monthly-sales p{
+    margin-right: 20px;
+  }
+  .sale-graph{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .sale-graph img{
+    width: 58rem;
+  }
+  .graph{
+    display:flex ;
+  }
+  
+  .pie-chart{
+    margin: 2rem 0rem 0rem 2rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    }
+  
+    .pie-chart p{
+      margin-left: 1.5rem ;
+    }
+  
+    .pie-chart img{
+      width: 17rem;
+      margin-left: 5rem;
+    }
+  
+    .red-dot{
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color: #C8242F;
+      justify-content: space-between;
+    }
+    .row1 , .row2{
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .row1 div
+    {
+      display: flex;
+      align-items: center;
+    }
+  
+    .green-dot{
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color: #A2B86C;
+      display: flex;
+      align-items: center;
+    }
+  
+    .row2 div{
+      display: flex;
+      align-items: center;
+    }
+    .orange-dot{
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color:#F16C20;
+      justify-content: space-between;
+    }
+  
+    .yellow-dot{
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color:#EBC844;
+      justify-content: space-between;
+    }
+    table {
+      background-color: #FFFFFF;
+      margin-top: 5rem;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      padding-top: 20px;
+    }
+     #inv{
+      color: #3E3E3E;
+      font: normal normal medium 22px/29px Roboto;
+      font-size: 22px;
+     }
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #E9E9E9;
+    }
+    th{
+      color: #ADADAD;
+      font-weight: 100;
+    }
+    td{
+      color: #3E3E3E;
+      padding: 15px;
+    }
+    .paid{
+      color: #3CDD5F;
+      background-color:#EBFFEF;
+      text-align: center;
+      margin: 0;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .failed{
+      color: #FF4545;
+      background-color:#FFF5F5;
+      text-align: center;
+      margin: 0;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .pending{
+      color: #BABABA;
+      background-color:#F8F8F8;
+      text-align: center;
+      margin: 0;
+      width: fit-content;
+      padding: 10px;
+      border-radius: 10px;
+    }
