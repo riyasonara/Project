@@ -93,6 +93,121 @@ body {
     width: 1.3rem;
     margin-right: 0.6rem;
   }
-.main-section p{
-  font: normal normal medium 30px/39px Roboto;
+.disable{
+  border: 1px dashed #ADADAD !important; 
+  /* border-radius: 5px; */
 }
+.other-elements{
+  font: normal normal medium 22px/29px Roboto;
+  color: #3E3E3E;
+}
+.file-upload{
+  font: normal normal medium 18px/24px Roboto;
+  color: #3E3E3E;
+}
+.other img{
+  width: 20px;
+  align-items: center;
+}
+.btn{
+  border: 1px solid #C8242F !important;
+  border-radius: 18px !important;
+  color: #C8242F !important;
+}
+.nis{
+  font: normal normal normal 12px/16px Roboto;
+  color: #ADADAD;
+  margin-left: 10px;
+}
+.radio{
+  font: normal normal medium 18px/24px Roboto;
+  color: #3E3E3E;
+}
+.snackbar{
+  border: 1px solid #C8242F;
+  align-items: center;
+  display: flex;
+  border-radius: 5px; 
+  width: 49%;
+}
+.snackbar p{
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #C8242F;
+}
+
+.error-img{
+  width: 1.5rem;
+  margin-left: 1em;
+}
+
+.snackbar2{
+  border: 1px solid #00B9E1;
+  align-items: center;
+  display: flex;
+  border-radius: 5px; 
+  width: 49%;
+}
+.snackbar2 p{
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #00B9E1;
+}
+.snackbar3{
+  border: 1px solid #FFA800;
+  align-items: center;
+  display: flex;
+  border-radius: 5px; 
+  width: 49%;
+}
+.snackbar3 p{
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #FFA800;
+}
+.snackbar4{
+  border: 1px solid #00AF27;
+  align-items: center;
+  display: flex;
+  border-radius: 5px; 
+  width: 49%;
+}
+.snackbar4 p{
+  margin-top: 1em;
+  margin-left: 1em;
+  color: #00AF27;
+}
+
+
+.first-row , .second-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.dngbtn{
+  border-radius: 22px !important;
+  padding: 6px 25px 6px 25px !important;
+}
+#primary{
+  color: white !important;
+}
+.country button{
+  background: none;
+  border: none;
+}
+.country{
+  border-bottom: 1px solid grey;
+}
+.active-tab{
+  border-bottom: 3px solid #C8242F !important;
+}
+.tab-color{
+  color: #ADADAD;
+  font-size: 18px;
+}
+input
+{
+    accent-color: #C8242F !important;
+}
+

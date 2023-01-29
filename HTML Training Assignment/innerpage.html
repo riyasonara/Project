@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InnerPage</title>
-    <link rel="stylesheet" href="./CSS/Dashboard.css">
+    <link rel="stylesheet" href="./CSS/innerpage.css">
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800;900&family=Questrial&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -69,15 +72,189 @@
             </div>
         </div>
     </div>
-<div class="main-section">
-<p>Analysis</p>
-</div>
+    <div class="main-container m-4">
+        <p class="fs-3 font-italic">Analysis</p>
+
+        <div class="bg-white p-3 ">
+            <p class="mt-4 fs-5"> One Column </p>
+            <input type="text" placeholder="Name" class="form-control">
+            <select class="form-select mt-3" aria-label="Default select example">
+                <option selected>Dropdown</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Multiple lines"></textarea>
+            </div>
+            <p class="mt-4 fs-5">Two Column</p>
+            <div class="row">
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-3">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-3">
+                    <input type="text" placeholder="Username" class="form-control">
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-3">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <select class="form-select p-2" aria-label="Default select example">
+                        <option selected>Dropdown</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <p class="mt-4 fs-5">Three Column</p>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-3">
+                    <input type="text" placeholder="Focus" class="form-control">
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-3">
+                    <input type="text" placeholder="Password" class="form-control">
+                </div>
+                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-3">
+                    <input class="form-control disable" type="text" placeholder="Name"
+                        aria-label="Disabled input example" disabled>
+                </div>
+                <p class="mt-4 fs-5">Four Column</p>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-3">
+                    <input type="text" placeholder="UI Designer" class="form-control is-invalid" id="validationServer03"
+                        aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                        <label for="validationServer03" class="form-label">Enter Valid data</label>
+                        <!-- Please provide a valid city. -->
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-3">
+                    <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-3">
+                    <input type="text" placeholder="Username" class="form-control">
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-3">
+                    <select class="form-select p-2" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+
+                <p class="mt-4 fs-5 other-elements">Other Design Elements</p>
+                <div class="other">
+                    <p class="mt-4 fs-5 file-upload">File Upload</p>
+                    <button type="button" class="btn btn-outline-primary button mb-4">
+                        <img src="./images/cloud-upload-icon.svg" alt="">
+                        Upload</button><span class="nis">No items selected</span>
+                </div>
+                <div class="rc">
+                    <p class="mt-4 fs-5">Radio Button </p>
+
+                    <input type="radio" name="RADIO 1"> Option 1
+                    <input type="radio" name="RADIO 1" class="ms-3"> Option 2
+
+                    <p class="mt-4 fs-5"> Check Box</p>
+                    <input type="checkbox" name="CHECKBOX1"> Option 1
+                    <input type="checkbox" name="CHECKBOX1" class="ms-3"> Option 2
+                </div>
+
+                <p class="mt-4 fs-5"> Snackbar </p>
+                <div class="first-row">
+                    <div class="snackbar mt-4">
+                        <img class="error-img" src="./images/error-icon.svg" alt="">
+                        <p>This is an error message</p>
+                    </div>
+
+                    <div class="snackbar2 mt-4">
+                        <img class="error-img" src="./images/info-icon.svg" alt="">
+                        <p>This is an information message</p>
+                    </div>
+                </div>
+                <div class="mg-4 second-row">
+                    <div class="snackbar3 mt-4">
+                        <img class="error-img" src="./images/warning-icon.svg" alt="">
+                        <p>This is an error message</p>
+                    </div>
+
+                    <div class="snackbar4 mt-4">
+                        <img class="error-img" src="./images/success-icon.svg" alt="">
+                        <p>This is an error message</p>
+                    </div>
+                </div>
+                <div class="call-action">
+                    <p class="mt-4 fs-5"> Call to Action</p>
+                    <button type="button" class="btn btn-danger dngbtn" id="primary">Primary</button>
+                    <button type="button" class="btn btn-outline-danger ms-3 dngbtn"> Secondary</button>
+                </div>
+
+
+                <p class="mt-4 fs-5">Tabs</p>
+                <div class="w3-container">
+                    <div class="w3-bar country tab-color">
+                        <button class="w3-bar-item w3-button tablink active-tab" onclick="openCity(event,'London')">Tab
+                            1</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Tab 2</button>
+                        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Tab 3</button>
+                    </div>
+
+                    <div id="London" class="w3-container w3-border mt-4 city">
+                        <p>London is the capital city of England. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Asperiores officiis, necessitatibus fuga itaque nobis eius soluta odit non deleniti
+                            vitae veritatis, maiores perferendis assumenda quo voluptatum, accusamus cum exercitationem
+                            quod mollitia nulla? Molestiae eum consequuntur itaque, aliquid iure corrupti, maiores
+                            accusantium dicta vero voluptatum fugit corporis quae enim sint nesciunt?</p>
+                    </div>
+
+                    <div id="Paris" class="w3-container w3-border mt-4 city" style="display:none">
+
+                        <p>Paris is the capital of France. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                            eligendi ut quis? Ad repellat est officia explicabo nihil dolore, voluptates, veritatis
+                            blanditiis commodi vero optio necessitatibus fugiat! Optio error accusantium, nulla, atque
+                            doloribus dolores repellat dolorum ea harum eum ipsam dicta quam vero quae blanditiis ullam
+                            expedita! Ex, qui dolorem!</p>
+                    </div>
+
+                    <div id="Tokyo" class="w3-container mt-4 w3-border city" style="display:none">
+
+                        <p>Tokyo is the capital of Japan. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+                            debitis aliquam autem dignissimos! Maxime voluptatibus cum dicta cupiditate officiis natus,
+                            laudantium doloribus veniam fuga corporis facere maiores excepturi saepe, consequuntur quis
+                            deserunt, mollitia atque harum fugit ipsum. Blanditiis enim, quae laudantium modi nostrum
+                            eius ipsam esse. Eos quia dolorum nemo!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 </body>
 <script>
     let sidebar = document.getElementById("sidebar");
     function handleInOut() {
         sidebar.classList.toggle("width-0")
         sidebar.classList.toggle("sidebar-active")
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-tab";
     }
 </script>
 
