@@ -109,6 +109,9 @@ body {
   width: 20px;
   align-items: center;
 }
+.other{
+  display: flex;
+}
 .btn{
   border: 1px solid #C8242F !important;
   border-radius: 18px !important;
@@ -118,6 +121,7 @@ body {
   font: normal normal normal 12px/16px Roboto;
   color: #ADADAD;
   margin-left: 10px;
+  align-items: center;
 }
 .radio{
   font: normal normal medium 18px/24px Roboto;
@@ -129,6 +133,7 @@ body {
   display: flex;
   border-radius: 5px; 
   width: 49%;
+  flex-wrap: wrap;
 }
 .snackbar p{
   margin-top: 1em;
@@ -211,3 +216,22 @@ input
     accent-color: #C8242F !important;
 }
 
+@media screen and (max-width:680px) {
+  .first-row, .second-row
+  {
+    flex-direction: column;
+    
+  }
+
+  .snackbar, .snackbar2, .snackbar3, .snackbar4{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  
+  .snackbar, .snackbar2, .snackbar3, .snackbar4{
+    width: 90%;
+  }
+}
