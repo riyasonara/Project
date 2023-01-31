@@ -181,6 +181,12 @@ body {
     display:flex ;
     justify-content: space-between;
   }
+  .pie-info
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   
   .pie-chart{
     margin: 2rem 0rem 0rem 2rem;
@@ -206,12 +212,6 @@ body {
       background-color: #C8242F;
       justify-content: space-between;
     }
-    .row1 , .row2{
-      
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
     .row1 div
     {
       display: flex;
@@ -225,6 +225,7 @@ body {
       background-color: #A2B86C;
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   
     .row2 div{
@@ -236,7 +237,7 @@ body {
       width: 18px;
       border-radius: 50%;
       background-color:#F16C20;
-      justify-content: space-between;
+      justify-content: space-between
     }
   
     .yellow-dot{
@@ -254,10 +255,11 @@ body {
       width: 100%;
       padding-top: 20px;
     }
-     #inv{
+     #invoice{
       color: #3E3E3E;
       font: normal normal medium 22px/29px Roboto;
       font-size: 22px;
+      margin-left: 10px;
      }
     th, td {
       text-align: left;
@@ -281,7 +283,6 @@ body {
       padding: 10px;
       border-radius: 10px;
     }
-  
     .failed{
       color: #FF4545;
       background-color:#FFF5F5;
@@ -291,7 +292,6 @@ body {
       padding: 10px;
       border-radius: 10px;
     }
-  
     .pending{
       color: #BABABA;
       background-color:#F8F8F8;
@@ -306,9 +306,10 @@ body {
       
       .options{
         /* flex-direction: column ; */
-        margin: 1rem;
+        /* margin: 1rem; */
         width: 90% !important;
         flex-wrap: wrap;
+        padding: 0;
       }
 
       .box{
@@ -323,5 +324,21 @@ body {
       .box
       {
         width: 90%;
+      }
+    }
+
+    @media screen and (max-width:680px) {
+      .graph{
+        flex-wrap: wrap;
+      }
+      .pie-chart{
+        width: 100%;
+        margin-left: 0;
+      }
+      .sale-graph{
+        width: 100%;
+      }
+      table{
+        margin: 0 1rem;
       }
     }

@@ -30,6 +30,8 @@
             <img src="./images/search-icon.svg" alt="" srcset="">
             <input type="text" placeholder="Search..">
         </div>
+        <img src="./images/notification-icon.svg" class="notification-mobile" alt="" srcset="">
+
         <div class="notification-profile">
             <img src="./images/notification-icon.svg" alt="" srcset="">
             <div class="profile">
@@ -41,6 +43,18 @@
     </div>
     <div class="sidebar" id="sidebar">
         <div class="dashboard-options">
+            <div class="search">
+                <img src="./images/search-icon.svg" alt="" srcset="">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="profile-mobile">
+                <!-- <img src="./images/notification-icon.svg" alt="" srcset=""> -->
+                <div class="profile">
+                    <img src="./images/profile.png" class="profile-pic" alt="" srcset="">
+                    <p>John doe</p>
+                    <img src="./images/downward-arrow.svg" class="down-arrow" alt="" srcset="">
+                </div>
+            </div>
             <div class="dash-option ">
                 <img src="./images/dashboard-default.svg" alt="" srcset="">
                 <p>Dashboard</p>
@@ -109,7 +123,7 @@
                     </select>
                 </div>
                 <p class="mt-4 fs-5">Three Column</p>
-                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-3">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-32">
                     <input type="text" placeholder="Focus" class="form-control">
                 </div>
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-3">
@@ -144,12 +158,18 @@
                 </div>
 
                 <p class="mt-4 fs-5 other-elements">Other Design Elements</p>
-                <p class="mt-4 fs-5 file-upload">File Upload</p>
+                <!-- <p class="mt-4 fs-5 file-upload">File Upload</p>
                 <div class="other">
                     <button type="button" class="btn btn-outline-primary button mb-4">
                         <img src="./images/cloud-upload-icon.svg" alt="">
                         Upload</button><span class="nis mt-2">No items selected</span>
-                </div>
+                </div> -->
+                <p class="mt-3 fs-5"> File Upload </p>
+
+            <div class="upload">
+                <label for="upload-photo"> <img src="./images/cloud-upload-icon.svg" alt="">&nbsp; Upload</label>
+                <input type="file" name="photo" id="upload-photo" />
+            </div>
                 <div class="rc">
                     <p class="mt-4 fs-5">Radio Button </p>
 
@@ -185,9 +205,9 @@
                     </div>
                 </div>
                 <div class="call-action">
-                    <p class="mt-4 fs-5"> Call to Action</p>
+                    <p class="mt-4 dnfs-5"> Call to Action</p>
                     <button type="button" class="btn btn-danger dngbtn" id="primary">Primary</button>
-                    <button type="button" class="btn btn-outline-danger ms-3 dngbtn"> Secondary</button>
+                    <button type="button" class="btn btn-outline-danger ms-3 dngbtn">Secondary</button>
                 </div>
 
 
@@ -200,7 +220,7 @@
                         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Tab 3</button>
                     </div>
 
-                    <div id="London" class="w3-container w3-border mt-4 city">
+                    <div id="London" class="w3-container mt-4 city">
                         <p>London is the capital city of England. Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Asperiores officiis, necessitatibus fuga itaque nobis eius soluta odit non deleniti
                             vitae veritatis, maiores perferendis assumenda quo voluptatum, accusamus cum exercitationem
@@ -208,7 +228,7 @@
                             accusantium dicta vero voluptatum fugit corporis quae enim sint nesciunt?</p>
                     </div>
 
-                    <div id="Paris" class="w3-container w3-border mt-4 city" style="display:none">
+                    <div id="Paris" class="w3-container mt-4 city" style="display:none">
 
                         <p>Paris is the capital of France. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                             eligendi ut quis? Ad repellat est officia explicabo nihil dolore, voluptates, veritatis
@@ -217,7 +237,7 @@
                             expedita! Ex, qui dolorem!</p>
                     </div>
 
-                    <div id="Tokyo" class="w3-container mt-4 w3-border city" style="display:none">
+                    <div id="Tokyo" class="w3-container mt-4 city" style="display:none">
 
                         <p>Tokyo is the capital of Japan. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
                             debitis aliquam autem dignissimos! Maxime voluptatibus cum dicta cupiditate officiis natus,

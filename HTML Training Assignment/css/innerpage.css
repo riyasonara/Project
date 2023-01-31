@@ -75,6 +75,7 @@ body {
     width: 80%;
     margin: auto;
     margin-top: 1rem;
+    /* margin-bottom: 1rem; */
     padding-left: 0.6rem;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -95,23 +96,41 @@ body {
   }
 .disable{
   border: 1px dashed #ADADAD !important; 
-  /* border-radius: 5px; */
 }
 .other-elements{
   font: normal normal medium 22px/29px Roboto;
   color: #3E3E3E;
 }
-.file-upload{
+/* .file-upload{
   font: normal normal medium 18px/24px Roboto;
   color: #3E3E3E;
-}
-.other img{
+} */
+/* .other img{
   width: 20px;
   align-items: center;
+} */
+label {
+  cursor: pointer;
+  /* Style as you please, it will become the visible UI component. */
 }
-.other{
+
+/* #upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+.upload {
+  color: #c8242f;
+  border: 1px solid #c8242f;
+  border-radius: 20px;
+  width: 8%;
+  padding: 2px 18px 2px 18px;
+}
+
+/* .other{
   display: flex;
-}
+} */
 .btn{
   border: 1px solid #C8242F !important;
   border-radius: 18px !important;
@@ -216,16 +235,54 @@ input
     accent-color: #C8242F !important;
 }
 
+
+.profile-mobile{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.search{
+  display: none;
+}
+.notification-mobile{
+  display: none;
+}
 @media screen and (max-width:680px) {
+  .search{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  .notification-mobile{
+    display: block;
+    margin-right: 2rem;
+  }
+  .search img{
+    width: 1.5rem;
+  }
+  .search input{
+    border: none;
+    outline: none;
+  }
   .first-row, .second-row
   {
     flex-direction: column;
     
   }
-
   .snackbar, .snackbar2, .snackbar3, .snackbar4{
     width: 90%;
   }
+  .Search-div{
+    display: none;
+  }
+  .notification-profile{
+    display: none;
+  }
+  
 }
 
 
@@ -234,4 +291,11 @@ input
   .snackbar, .snackbar2, .snackbar3, .snackbar4{
     width: 90%;
   }
+  .dngbtn{
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
 }
+
+
